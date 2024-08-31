@@ -1,0 +1,88 @@
+/* Estilo general */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #a0a2a7;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('background-voting.jpg'); /* Imagen de fondo relacionada con votaciones */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Contenedor principal */
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco con opacidad */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+}
+
+/* Título principal */
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 3px solid #007bff;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+/* Contenedor de imágenes para votar */
+.images-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+/* Estilo de las imágenes */
+.vote-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.vote-image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Contenedor de resultados */
+.results-container {
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 2px solid #ddd;
+}
+
+/* Título de los resultados */
+.results-container h2 {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Estilo de los resultados */
+.results-container div {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 8px;
+}
+
+/* Estilo de los textos de resultado */
+#opcion1::before, #opcion2::before, #opcion3::before, #opcion4::before {
+    content: url('icon-vote.png'); /* Icono relacionado a la votación */
+    margin-right: 10px;
+    vertical-align: middle;
+}

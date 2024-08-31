@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOTACIÓN CAMISETAS 2025-2026</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Votación Anónima</h1>
+        <div class="vote-container">
+            <p>Haz clic en una imagen para votar:</p>
+            <div class="images-container">
+                <img src="Imágenes/Camiseta Cosme Villa.jpeg" alt="Opción 1" class="vote-image" onclick="submitVote('opcion1')">
+                <img src="Imágenes/Camiseta Cosme Fernandez.jpeg" alt="Opción 2" class="vote-image" onclick="submitVote('opcion2')">
+                <img src="Imágenes/Camiseta Lopez Cosme.jpeg" alt="Opción 3" class="vote-image" onclick="submitVote('opcion3')">
+                <img src="Imágenes/Camiseta Janampa Cosme.png" alt="Opción 4" class="vote-image" onclick="submitVote('opcion4')">
+            </div>
+        </div>
+        <div id="results" class="results-container">
+            <h2>Resultados:</h2>
+            <div id="opcion1">Opción 1: 0 votos</div>
+            <div id="opcion2">Opción 2: 0 votos</div>
+            <div id="opcion3">Opción 3: 0 votos</div>
+            <div id="opcion4">Opción 4: 0 votos</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
